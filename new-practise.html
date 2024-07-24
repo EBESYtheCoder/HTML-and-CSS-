@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FlexBox Example</title>
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .main-div {
+      display: flex;
+      width: 300px;
+      flex-direction: column;
+      margin-top: 60px;
+      border-color: rgb(184, 184, 184);
+      border-style: solid;
+      background-color: rgb(249, 249, 249);
+      border-width: 1px;
+      box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+      line-height: 16px;
+      margin-left: 100px;
+
+
+    }
+
+    .inbox-notf {
+      background-color: none;
+      color: gray;
+      font-size: 12px;
+      margin: 0;
+      padding-left: 8px;
+
+    }
+
+    .div-1 {
+      height: 30px;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .picture-pandas {
+      width: 36px;
+      border-radius: 18px;
+      padding-left: 2px;
+    }
+
+    .div-2 {
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .potrait-class {
+      width: 40px;
+      display: flex;
+    }
+
+    .messages {
+      background-color: none;
+    }
+
+    .div-3 {
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .div-4 {
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  </style>
+</head>
+<div class="main-div">
+  <div class="div-1">
+    <p class="inbox-notf">ALL INBOXES</p>
+  </div>
+  <div class="div-2">
+    <div class="potrait-class">
+      <img class="picture-pandas" src="channel-1.jpeg">
+    </div>
+    <div class="messages">
+      <div style="
+        display: flex;
+        flex-direction: row;
+        ">
+        <div>
+          <p style="
+          font-size: 16px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          width: 130px;
+          font-weight: bold;
+          ">Chewy Promotions</p>
+        </div>
+        <div style="
+          display: flex;
+          align-items:last baseline;
+          width: 130px;
+        ">
+          <p style="
+          font-size: 12px;
+          margin: 0;
+          padding-left: 80px;
+          color: gray;
+          ">04.58 PM</p>
+        </div>
+      </div>
+      <p style="
+      font-size: 12px;
+      margin: 0;
+      font-weight: bold;
+      ">Biggest sales of the year!</p>
+      <p style="
+      font-size: 12px;
+      margin: 0;
+      color: gray;
+      font-weight: 300;
+      ">Hey there! We're writing to tell you about our...</p>
+    </div>
+  </div>
+  <div class="div-3">
+    <div class="potrait-class">
+      <img class="picture-pandas" src="channel-5.jpeg">
+    </div>
+    <div class="messages">
+      <div style="
+        display: flex;
+        flex-direction: row;
+        ">
+        <div>
+          <p style="
+          font-size: 16px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          width: 130px;
+          font-weight: bold;
+          ">Best Buy</p>
+        </div>
+        <div style="
+          display: flex;
+          align-items:last baseline;
+          width: 130px;
+        ">
+          <p style="
+          font-size: 12px;
+          margin: 0;
+          padding-left: 80px;
+          color: gray;
+          ">12.32 PM</p>
+        </div>
+      </div>
+      <p style="
+      font-size: 12px;
+      margin: 0;
+      font-weight: bold;
+      ">Your Best Buy eReceipt</p>
+      <p style="
+      font-size: 12px;
+      margin: 0;
+      color: gray;
+      font-weight: 300;
+      ">Thank you for shopping at Best Buy , here is...</p>
+    </div>
+  </div>
+  <div class="div-4">
+    <div class="potrait-class">
+      <img class="picture-pandas" src="channel-8.jpeg">
+    </div>
+    <div class="messages">
+      <div style="
+        display: flex;
+        flex-direction: row;
+        ">
+        <div>
+          <p style="
+          font-size: 16px;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          width: 130px;
+          font-weight: bold;
+          ">Netflix</p>
+        </div>
+        <div style="
+          display: flex;
+          align-items:last baseline;
+          width: 130px;
+        ">
+          <p style="
+          font-size: 12px;
+          margin: 0;
+          padding-left: 80px;
+          color: gray;
+          ">09.00 AM</p>
+        </div>
+      </div>
+      <p style="
+      font-size: 12px;
+      margin: 0;
+      font-weight: bold;
+      ">Here's what's coming soon to Netflix</p>
+      <p style="
+      font-size: 12px;
+      margin: 0;
+      color: gray;
+      font-weight: 300;
+      ">Brand new movies and series, old favorites...</p>
+    </div>
+  </div>
+</div>
+
+<head>
+
+</head>
+
+</html>
