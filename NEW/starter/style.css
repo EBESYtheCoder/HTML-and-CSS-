@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-left: 50px;
+  width: 400px;
+  height: 600px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(150, 139, 139);
+
+}
+
+.tasks {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.msg {
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 5px;
+  width: 320px;
+  height: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 3px;
+  background-color: white;
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputbox {
+  width: 320px;
+  height: 30px;
+  border-radius: 15px;
+  border-style: outset;
+}
+
+.input-div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  border-style: none;
+  cursor: pointer;
+  background-color: rgb(29, 23, 23);
+  color: white;
+}
