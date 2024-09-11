@@ -13,32 +13,15 @@
     <h2>Task Manager Pro</h2>
     <div class="input-div">
       <input id="js-inputbox" class="inputbox" placeholder="...clean the house" type="text">
-      <button id="js-add-button" class="add-button">Add</button>
+      <button id="js-add-button" class="add-button" type="submit">Add</button>
     </div>
-    <div id="addTaskZone">
+    <p id="js-errorMsg" style="color: rgb(255, 0, 0);"></p>
+    <div>
       <h3>Tasks</h3>
-      <div class="tasks">
-        <div class="msg">
-          <p>1.clean the house and dust everything </p>
-        </div>
-        <div class="buttons-div">
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-      </div>
-      <div class="tasks">
-        <div class="msg">
-          <p>2.learn node js and master expreess js and later learn react js</p>
-        </div>
-        <div class="buttons-div">
-          <button>Edit</button>
-          <button>Delete</button>
-        </div>
-
-      </div>
+      <div id="addTaskZone"></div>
     </div>
   </div>
-  <script src="main.js"></script>
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>

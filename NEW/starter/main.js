@@ -1,30 +1,18 @@
-const addBtn = document.getElementById("js-add-button")
-const input = document.getElementById("js-inputbox")
-const container = document.getElementById("addTaskZone")
-let data = {}
+import { data, generateHTML, addTask } from "./middleware.js"
 
-const getData = () => {
-  const task = input.value
-  return task
-}
+// const deleteBtn = document.querySelectorAll(".js-delete-button")
 
-const addTask = () => {
-  const newTask = getData()
-  data['task'] = newTask
-  console.log(data)
-  container.innerHTML +=
-    `
-  <div class="tasks">
-    <div class="msg">
-      <p>${data.task}</p>
-    </div>
-    <div class="buttons-div">
-      <button>Edit</button>
-      <button>Delete</button>
-    </div>
-  </div>
-  `
-  input.value = ""
-}
+generateHTML(data)
 
-addBtn.addEventListener('click', () => addTask())
+document.getElementById("js-add-button").addEventListener('click', () => addTask())
+
+
+
+
+
+
+
+
+
+
+
