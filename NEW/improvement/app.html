@@ -4,11 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TASK MANAGER 2.1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>To Do List 2.1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <div class="app">
+    <div class="container">
+      <div id="wrapper">
+        <input type="text" placeholder="Task to be done...">
+        <button id="add-btn">Add</button>
+      </div>
+      <div id="tasks">
+        <p id="pending-tasks">You have <span class="count-value">0</span> task(s) to complete.</p>
+      </div>
+    </div>
+    <p id="error">Input cannot not be empty!</p>
+  </div>
+  <script src="main.js"></script>
 </body>
 
-</html> 
+</html>
