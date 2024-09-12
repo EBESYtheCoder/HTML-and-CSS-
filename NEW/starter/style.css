@@ -5,11 +5,11 @@ body {
 .container {
   margin-left: 50px;
   width: 400px;
-  height: 600px;
-  border-style: solid;
+  border: rgb(120, 111, 111) solid;
   padding: 10px;
-  border-radius: 3px;
-  background-color: rgb(150, 139, 139);
+  border-radius: 12px;
+  background-color: rgb(95, 162, 210);
+  box-shadow: 5px 5px rgb(0, 0, 0, 0.5);
 
 }
 

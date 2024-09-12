@@ -1,6 +1,5 @@
 const container = document.getElementById("addTaskZone")
 const input = document.getElementById("js-inputbox")
-const editBtn = document.querySelectorAll(".js-edit-button")
 
 export let data = [
   // {
@@ -22,7 +21,8 @@ function generateRandomId() {
   return id;
 }
 
-export let generateHTML = (data) => {
+export let generateHTML = () => {
+  data = JSON.parse(localStorage.getItem('data')) || []
   data.forEach((dataset) => {
     const id = dataset.id
     const tasks = dataset.task
@@ -81,9 +81,9 @@ export const addTask = () => {
   } else {
     let newTask = getData()
     data.push(newTask)
+    localStorage.setItem('data', JSON.stringify(data))
     deleteAllTasks()
     generateHTML(data)
-    console.log('task added')
     input.value = ""
     document.getElementById('js-errorMsg').innerHTML = ""
   }
@@ -93,11 +93,12 @@ export const addTask = () => {
 const deleteAllTasks = () => {
   const rapper = document.getElementById('addTaskZone')
   rapper.innerHTML = ''
+
 }
 
 const deleteFromArray = (itemId) => {
   const filtereddata = data.filter(data => data.id !== itemId);
   data = filtereddata
-  console.log(data)
+  localStorage.setItem('data', JSON.stringify(data))
 }
 
