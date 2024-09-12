@@ -46,6 +46,7 @@ let acceptData = () => {
 let createTasks = () => {
   tasks.innerHTML = "";
   data.map((x, y) => {
+    console.log(`x:${x}, y:${y}`)
     return (tasks.innerHTML += `
     <div id=${y}>
           <span class="fw-bold">${x.text}</span>
@@ -68,7 +69,7 @@ let deleteTask = (e) => {
   data.splice(e.parentElement.parentElement.id, 1);
   localStorage.setItem("data", JSON.stringify(data));
   console.log(data);
-  
+
 };
 
 let editTask = (e) => {
