@@ -4,12 +4,12 @@ body {
 
 .container {
   margin-left: 50px;
+  border: none;
   width: 400px;
-  border: rgb(120, 111, 111) solid;
   padding: 10px;
   border-radius: 12px;
   background-color: rgb(95, 162, 210);
-  box-shadow: 5px 5px rgb(0, 0, 0, 0.5);
+  box-shadow: 0 1em 2em rgb(0, 0, 0, 0.3);
 
 }
 
@@ -22,15 +22,13 @@ body {
 }
 
 .msg {
-  border-color: black;
-  border-style: solid;
   margin-bottom: 5px;
   width: 320px;
   height: 80px;
   padding: 5px;
   border-radius: 5px;
-  border-width: 3px;
   background-color: white;
+  box-shadow: 0 1em 2em rgb(0, 0, 0, 0.3);
 }
 
 .buttons-div {
@@ -43,7 +41,13 @@ body {
   width: 320px;
   height: 30px;
   border-radius: 15px;
-  border-style: outset;
+  border: none;
+  outline: none;
+  border-bottom: rgb(0, 0, 0) solid;
+}
+
+.inputbox:focus {
+  border-bottom: rgb(228, 20, 20) solid;
 }
 
 .input-div {
