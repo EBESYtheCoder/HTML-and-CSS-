@@ -3,7 +3,6 @@ body {
 }
 
 .container {
-  margin-left: 50px;
   border: none;
   width: 400px;
   padding: 10px;
@@ -24,7 +23,7 @@ body {
 .msg {
   margin-bottom: 5px;
   width: 320px;
-  height: 80px;
+  height: 60px;
   padding: 5px;
   border-radius: 5px;
   background-color: white;
@@ -34,7 +33,7 @@ body {
 .buttons-div {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .inputbox {

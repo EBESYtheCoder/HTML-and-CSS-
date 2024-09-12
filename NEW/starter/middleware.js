@@ -42,9 +42,7 @@ export let generateHTML = () => {
   // console.log(data)
   document.querySelectorAll(".js-delete-button").forEach((button) => {
     button.addEventListener('click', () => {
-      console.log('button clicked')
       const itemId = button.dataset.productid;
-      console.log(`.${itemId}`)
       const elementToDelete = document.querySelector(`#item-${itemId}`)
       elementToDelete.remove()
       deleteFromArray(itemId)
@@ -55,9 +53,7 @@ export let generateHTML = () => {
 
   document.querySelectorAll(".js-edit-button").forEach((button) => {
     button.addEventListener('click', () => {
-      console.log('edit button clicked')
       const itemId = button.dataset.productid;
-      console.log(`.${itemId}`)
       const elementToEdit = document.querySelector(`#${itemId}`)
       input.value = elementToEdit.innerHTML
       document.querySelector(`#item-${itemId}`).remove()
